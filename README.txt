@@ -27,10 +27,9 @@ binary in the nodemcu_lfs dir to create a lfs.img file like so:
 $ luac.cross -f -o lfs.img *.lua
 
 3. NodeMCU
-First build a NodeMCU firmware with these modules: color_utils file gpio mdns net node tmr uart wifi ws2812 ws2812_effects
+First build a NodeMCU firmware with these modules: color_utils file gpio mdns net node tmr uart wifi ws2812
 and max lfs size (128kb)
-(I used a web builder
- which you will need later for the lua compiler to build the LFS image)
+(I used a web firmware builder at https://nodemcu-build.com)
 
 Flash the firmware and connect to the NodeMCU using Esplorer
 Create a init.lua file on the mcu to init wifi and mdns, and
